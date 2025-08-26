@@ -1,1 +1,3 @@
+npx rosey generate --source _site
+node create-locale-files.js
 npx -y pagefind@latest --source _site

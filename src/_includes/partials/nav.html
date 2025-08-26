@@ -7,7 +7,7 @@
                     <img class="logo logo-dark" src="{{ nav.logo.logo_image_dark }}" alt="{{ meta.project_name }} Logo">
                 {% endif %}
             {% else %}
-                <span class="logo-heading">{% if nav.logo.logo_heading %}{{ nav.logo.logo_heading }} {% else %} logo {% endif %}</span>
+                <span class="logo-heading" data-rosey="logo-heading">{% if nav.logo.logo_heading %}{{ nav.logo.logo_heading }} {% else %} logo {% endif %}</span>
             {% endif %}
         </a>
         <span class="editor-link"><a href="cloudcannon:collections/data/nav.yml" data-cms-bind-style="sidebar" class="btn"><strong>&#9998;</strong>Edit Navigation</a></span>
@@ -22,7 +22,7 @@
                     {% else %}
                         <a {% if link.link_icon_path %} target="_blank" {% else %} target="_self" {% endif %} href="/{{ link.link_url | url }}">
                     {% endif %}
-                        {{ link.link_label }}
+                        <span data-rosey="{{ link.link_label | slugify }}">{{ link.link_label }}</span>
                         {% if link.link_icon_path %}
                             <img class="nav-links" src="{{ link.link_icon_path }}" alt="{{ meta.project_name }} on {{ link.link_title }}" width="32" height="32">
                         {% endif %}
@@ -41,7 +41,7 @@
                 <button :aria-expanded="isOpen"
                         aria-controls="docnav-inner docnav-inner-mobile"
                         @click="isOpen = !isOpen" x-cloak>
-                    <p>{{ nav.side_nav_title }} Menu</p>
+                    <p data-rosey="{{ nav.side_nav_title | slugify }}-menu">{{ nav.side_nav_title }} Menu</p>
                     <span></span>
                </button>
             </div>

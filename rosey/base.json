@@ -1,0 +1,202 @@
+{
+  "version": 2,
+  "keys": {
+    "1-0-0": {
+      "original": "1.0.0",
+      "value": null,
+      "pages": {
+        "docs/configuring-navigation-footer/index.html": 1,
+        "docs/configuring-theme-colors/index.html": 1,
+        "docs/index.html": 1,
+        "docs/using-shortcodes/index.html": 1,
+        "fr/docs/configuring-navigation-footer/index.html": 1,
+        "fr/docs/configuring-theme-colors/index.html": 1,
+        "fr/docs/index.html": 1,
+        "fr/docs/using-shortcodes/index.html": 1,
+        "fr/index.html": 1,
+        "index.html": 1,
+        "schemas/docs/index.html": 1,
+        "schemas/page/index.html": 1
+      },
+      "total": 12
+    },
+    "another-test": {
+      "original": "Another test",
+      "value": null,
+      "pages": {
+        "docs/configuring-navigation-footer/index.html": 1,
+        "docs/configuring-theme-colors/index.html": 1,
+        "docs/index.html": 1,
+        "docs/using-shortcodes/index.html": 1,
+        "fr/docs/configuring-navigation-footer/index.html": 1,
+        "fr/docs/configuring-theme-colors/index.html": 1,
+        "fr/docs/index.html": 1,
+        "fr/docs/using-shortcodes/index.html": 1,
+        "fr/index.html": 1,
+        "index.html": 1,
+        "schemas/docs/index.html": 1,
+        "schemas/page/index.html": 1
+      },
+      "total": 12
+    },
+    "configuring-the-navigation-and-footer": {
+      "original": "Configuring the navigation and footer",
+      "value": null,
+      "pages": {
+        "docs/configuring-navigation-footer/index.html": 2,
+        "docs/configuring-theme-colors/index.html": 2,
+        "docs/index.html": 2,
+        "docs/using-shortcodes/index.html": 2,
+        "fr/docs/configuring-navigation-footer/index.html": 2,
+        "fr/docs/configuring-theme-colors/index.html": 2,
+        "fr/docs/index.html": 2,
+        "fr/docs/using-shortcodes/index.html": 2,
+        "fr/index.html": 2,
+        "index.html": 2,
+        "schemas/docs/index.html": 2,
+        "schemas/page/index.html": 2
+      },
+      "total": 24
+    },
+    "configuring-theme-colors": {
+      "original": "Configuring theme colors",
+      "value": null,
+      "pages": {
+        "docs/configuring-navigation-footer/index.html": 2,
+        "docs/configuring-theme-colors/index.html": 2,
+        "docs/index.html": 2,
+        "docs/using-shortcodes/index.html": 2,
+        "fr/docs/configuring-navigation-footer/index.html": 2,
+        "fr/docs/configuring-theme-colors/index.html": 2,
+        "fr/docs/index.html": 2,
+        "fr/docs/using-shortcodes/index.html": 2,
+        "fr/index.html": 2,
+        "index.html": 2,
+        "schemas/docs/index.html": 2,
+        "schemas/page/index.html": 2
+      },
+      "total": 24
+    },
+    "docs-menu": {
+      "original": "Docs Menu",
+      "value": null,
+      "pages": {
+        "docs/configuring-navigation-footer/index.html": 1,
+        "docs/configuring-theme-colors/index.html": 1,
+        "docs/index.html": 1,
+        "docs/using-shortcodes/index.html": 1,
+        "fr/docs/configuring-navigation-footer/index.html": 1,
+        "fr/docs/configuring-theme-colors/index.html": 1,
+        "fr/docs/index.html": 1,
+        "fr/docs/using-shortcodes/index.html": 1,
+        "fr/index.html": 1,
+        "index.html": 1,
+        "schemas/docs/index.html": 1,
+        "schemas/page/index.html": 1
+      },
+      "total": 12
+    },
+    "getting-started": {
+      "original": "Getting Started",
+      "value": null,
+      "pages": {
+        "docs/configuring-navigation-footer/index.html": 2,
+        "docs/configuring-theme-colors/index.html": 2,
+        "docs/index.html": 2,
+        "docs/using-shortcodes/index.html": 2,
+        "fr/docs/configuring-navigation-footer/index.html": 2,
+        "fr/docs/configuring-theme-colors/index.html": 2,
+        "fr/docs/index.html": 2,
+        "fr/docs/using-shortcodes/index.html": 2,
+        "fr/index.html": 2,
+        "index.html": 2,
+        "schemas/docs/index.html": 2,
+        "schemas/page/index.html": 2
+      },
+      "total": 24
+    },
+    "home": {
+      "original": "Home",
+      "value": null,
+      "pages": {
+        "docs/configuring-navigation-footer/index.html": 2,
+        "docs/configuring-theme-colors/index.html": 2,
+        "docs/index.html": 2,
+        "docs/using-shortcodes/index.html": 2,
+        "index.html": 2,
+        "schemas/docs/index.html": 2,
+        "schemas/page/index.html": 2
+      },
+      "total": 14
+    },
+    "home-fr": {
+      "original": "Home (fr)",
+      "value": null,
+      "pages": {
+        "fr/docs/configuring-navigation-footer/index.html": 2,
+        "fr/docs/configuring-theme-colors/index.html": 2,
+        "fr/docs/index.html": 2,
+        "fr/docs/using-shortcodes/index.html": 2,
+        "fr/index.html": 2
+      },
+      "total": 10
+    },
+    "logo-heading": {
+      "original": "Alto ",
+      "value": null,
+      "pages": {
+        "docs/configuring-navigation-footer/index.html": 1,
+        "docs/configuring-theme-colors/index.html": 1,
+        "docs/index.html": 1,
+        "docs/using-shortcodes/index.html": 1,
+        "fr/docs/configuring-navigation-footer/index.html": 1,
+        "fr/docs/configuring-theme-colors/index.html": 1,
+        "fr/docs/index.html": 1,
+        "fr/docs/using-shortcodes/index.html": 1,
+        "fr/index.html": 1,
+        "index.html": 1,
+        "schemas/docs/index.html": 1,
+        "schemas/page/index.html": 1
+      },
+      "total": 12
+    },
+    "test": {
+      "original": "Test",
+      "value": null,
+      "pages": {
+        "docs/configuring-navigation-footer/index.html": 1,
+        "docs/configuring-theme-colors/index.html": 1,
+        "docs/index.html": 1,
+        "docs/using-shortcodes/index.html": 1,
+        "fr/docs/configuring-navigation-footer/index.html": 1,
+        "fr/docs/configuring-theme-colors/index.html": 1,
+        "fr/docs/index.html": 1,
+        "fr/docs/using-shortcodes/index.html": 1,
+        "fr/index.html": 1,
+        "index.html": 1,
+        "schemas/docs/index.html": 1,
+        "schemas/page/index.html": 1
+      },
+      "total": 12
+    },
+    "using-shortcodes": {
+      "original": "Using Shortcodes",
+      "value": null,
+      "pages": {
+        "docs/configuring-navigation-footer/index.html": 2,
+        "docs/configuring-theme-colors/index.html": 2,
+        "docs/index.html": 2,
+        "docs/using-shortcodes/index.html": 2,
+        "fr/docs/configuring-navigation-footer/index.html": 2,
+        "fr/docs/configuring-theme-colors/index.html": 2,
+        "fr/docs/index.html": 2,
+        "fr/docs/using-shortcodes/index.html": 2,
+        "fr/index.html": 2,
+        "index.html": 2,
+        "schemas/docs/index.html": 2,
+        "schemas/page/index.html": 2
+      },
+      "total": 24
+    }
+  }
+}

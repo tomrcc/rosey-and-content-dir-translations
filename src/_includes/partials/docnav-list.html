@@ -8,7 +8,7 @@
                     {% assign entryLocale = entry.url | findLocale %}
                     {% if entryLocale == pageLocale %}
                         <li {% if entry.url == page.url %} class="active" {% endif %}>
-                            <a href="{{ entry.url }}">{{ entry.title }}</a>
+                            <a href="{{ entry.url }}" data-rosey="{{ entry.title | slugify }}">{{ entry.title }}</a>
                         </li>
                     {% endif %}
                 {%- endfor %}
@@ -21,7 +21,7 @@
                             {% assign entryLocale = entry.url | findLocale %}
                             {% if entryLocale == pageLocale %}
                                 <li {% if entry.url == page.url %} class="active" {% endif %}>
-                                    <a href="{{ entry.url }}">{{ entry.title }}</a>
+                                    <a href="{{ entry.url }}" data-rosey="{{ entry.title | slugify }}">{{ entry.title }}</a>
                                 </li>
                             {% endif %}
                         {% endfor %}

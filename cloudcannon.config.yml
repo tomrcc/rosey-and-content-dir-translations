@@ -23,6 +23,12 @@ collections_config:
       - visual
     filter: 
       base: strict
+  translations:
+    output: true
+    path: _rosey/locales
+    disable_add: true
+    disable_add_folder: true
+    icon: table_rows
   Navigation:
     output: true
     path: _data
@@ -117,6 +123,9 @@ collection_groups:
   - heading: Docs
     collections:
       - docs
+  - heading: Translations
+    collections:
+      - translations
   - heading: Site Settings
     collections:
       - Meta_Data
