@@ -31,7 +31,7 @@ collections_config:
       - visual
   translations:
     disable_url: true
-    path: _rosey/locales
+    path: rosey/locales
     disable_add: true
     disable_add_folder: true
     icon: table_rows
