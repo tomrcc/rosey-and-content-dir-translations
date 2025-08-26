@@ -17,7 +17,10 @@ timezone: Etc/UTC
 collections_config:
   pages:
     path: src/pages
-    url: /[full_slug]/
+    url: /[slug]/
+    glob: 
+      - "**/*.md"
+      - "!fr/*"
     disable_add_folder: true
     icon: page_info
     schemas:
@@ -30,6 +33,80 @@ collections_config:
     _enabled_editors:
       - content
       - visual
+  fr_pages:
+    path: src/pages/fr
+    url: /fr/[slug]/
+    glob: 
+      - "**/*.md"
+    disable_add_folder: true
+    icon: page_info
+    schemas:
+      default:
+        path: src/schemas/page.md
+    add_options:
+      - name: Add Site Page
+        editor: content
+        schema: default
+    _enabled_editors:
+      - content
+      - visual
+  docs:
+    path: src/docs
+    url: /docs/[slug]/
+    glob: 
+      - "**/*.md"
+      - "!fr/*"
+    icon: docs
+    disable_add_folder: true
+    schemas:
+      default:
+        path: src/schemas/docs.md
+    add_options:
+      - name: Read the docs
+        icon: local_library
+        href: https://docs.cloudcannon.com
+      - name: Add Document
+        editor: content      
+        schema: default
+    _enabled_editors:
+      - content
+      - visual
+    preview:
+      metadata: 
+        - icon: folder
+          text: 
+            - key: nav_section
+        - icon: format_list_numbered
+          text: 
+            - key: weight
+  fr_docs:
+    path: src/docs/fr
+    url: /fr/docs/[slug]/
+    glob: 
+      - "**/*.md"
+    icon: docs
+    disable_add_folder: true
+    schemas:
+      default:
+        path: src/schemas/docs.md
+    add_options:
+      - name: Read the docs
+        icon: local_library
+        href: https://docs.cloudcannon.com
+      - name: Add Document
+        editor: content      
+        schema: default
+    _enabled_editors:
+      - content
+      - visual
+    preview:
+      metadata: 
+        - icon: folder
+          text: 
+            - key: nav_section
+        - icon: format_list_numbered
+          text: 
+            - key: weight
   translations:
     disable_url: true
     path: rosey/locales
@@ -71,32 +148,6 @@ collections_config:
         - icon: add_alert
           text: 
             - key: enable_banner
-  docs:
-    path: src/docs
-    url: /docs/[slug]/
-    icon: docs
-    disable_add_folder: true
-    schemas:
-      default:
-        path: src/schemas/docs.md
-    add_options:
-      - name: Read the docs
-        icon: local_library
-        href: https://docs.cloudcannon.com
-      - name: Add Document
-        editor: content      
-        schema: default
-    _enabled_editors:
-      - content
-      - visual
-    preview:
-      metadata: 
-        - icon: folder
-          text: 
-            - key: nav_section
-        - icon: format_list_numbered
-          text: 
-            - key: weight
   Meta_Data:
     disable_url: true
     path: src/_data
@@ -114,9 +165,11 @@ collection_groups:
   - heading: Base Pages
     collections:
       - pages
+      - fr_pages
   - heading: Docs
     collections:
       - docs
+      - fr_docs
   - heading: Translations
     collections:
       - translations
