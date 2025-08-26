@@ -1,3 +1,13 @@
+# The locations of various types of files within your site.
+# Each path is relative to your site's source folder.
+paths:
+  static: ""
+  uploads: assets/images/uploads
+
+# Timezone of your site in IANA format. This is used by date and datetime inputs
+# within the CloudCannon Data Editor.
+timezone: Etc/UTC
+
 # Read the CloudCannon documentation for more information on how to use this file:
 # https://cloudcannon.com/documentation/articles/setting-global-configuration/?ssg=Eleventy
 
@@ -6,11 +16,9 @@
 # CloudCannon configuration specific to those collections.
 collections_config:
   pages:
-    output: true
-    parse_branch_index: true
+    path: src/pages
     disable_add_folder: true
-    path: pages
-    icon: feed
+    icon: page_info
     schemas:
       default:
         path: src/schemas/page.md
@@ -21,45 +29,37 @@ collections_config:
     _enabled_editors:
       - content
       - visual
-    filter: 
-      base: strict
   translations:
-    output: true
+    disable_url: true
     path: _rosey/locales
     disable_add: true
     disable_add_folder: true
     icon: table_rows
   Navigation:
-    output: true
-    path: _data
+    disable_url: true
+    path: src/_data
     disable_add: true
     disable_add_folder: true
     icon: table_rows
-    filter:
-       base: none
-       include: 
-        - nav.yml
-        - footer.yml
+    glob:
+      - nav.yml
+      - footer.yml
   Theme_Palette:
-    output: true
-    path: _data
+    disable_url: true
+    path: src/_data
     disable_add: true
     disable_add_folder: true
     icon: color_lens
-    filter:
-       base: none
-       include: 
-        - theme.yml
+    glob:
+      - theme.yml
   banner:
-    output: true
-    path: _data
+    disable_url: true
+    path: src/_data
     disable_add: true
     disable_add_folder: true
     icon: add_alert
-    filter:
-       base: none
-       include: 
-        - banner.yml
+    glob:
+      - banner.yml
     preview:
       gallery:
         icon: add_alert
@@ -71,9 +71,9 @@ collections_config:
           text: 
             - key: enable_banner
   docs:
-    path: docs
-    base_url: /docs
-    icon: file
+    path: src/docs
+    url: /docs/[slug]
+    icon: docs
     disable_add_folder: true
     schemas:
       default:
@@ -88,7 +88,6 @@ collections_config:
     _enabled_editors:
       - content
       - visual
-    parse_branch_index: true
     preview:
       metadata: 
         - icon: folder
@@ -97,20 +96,14 @@ collections_config:
         - icon: format_list_numbered
           text: 
             - key: weight
-
-    output: true
   Meta_Data:
-    output: false
-    path: _data
+    disable_url: true
+    path: src/_data
     icon: settings
     disable_add: true
     disable_add_folder: true
-    filter: 
-      exclude:
-        - theme.yml
-        - nav.yml
-        - footer.yml
-        - banner.yml
+    glob: 
+      - meta.yml
       
       
 
@@ -1194,29 +1187,3 @@ _select_data:
       display_name: YAML
     - key: zephir
       display_name: Zephir
-
-
-# Set this to true to disable auto-detection of collections.
-collections_config_override: false
-
-# Control which data sets are available to populate select and multiselect inputs.
-data_config:
-
-# Base path to your source files, relative to the root folder of your repository.
-source: src
-
-# The locations of various types of files within your site.
-# Each path is relative to your site's source folder.
-paths:
-  data: _data
-  collections: docs
-  includes: _includes
-  layouts: _includes/layouts  
-  uploads: assets/images/uploads
-
-# Lets you control the look and behaviour of the Source Editor.
-source_editor:
-
-# Timezone of your site in IANA format. This is used by date and datetime inputs
-# within the CloudCannon Data Editor.
-timezone: Etc/UTC
