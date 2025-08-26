@@ -1,12 +1,16 @@
+{% assign pageLocale = page.url | findLocale %}
 <ol class="docnav-list">
     {% for collection in collections %}
         {% if collection[0] != 'all' %}
             {% if collection[0] == 'page' %}
                 {% assign navPages = collections[collection[0]] | eleventyNavigation %}
                 {%- for entry in navPages %}
-                    <li {% if entry.url == page.url %} class="active" {% endif %}>
-                        <a href="{{ entry.url }}">{{ entry.title }}</a>
-                    </li>
+                    {% assign entryLocale = entry.url | findLocale %}
+                    {% if entryLocale == pageLocale %}
+                        <li {% if entry.url == page.url %} class="active" {% endif %}>
+                            <a href="{{ entry.url }}">{{ entry.title }}</a>
+                        </li>
+                    {% endif %}
                 {%- endfor %}
             {% else %}
                 <li>
@@ -14,9 +18,12 @@
                     <ol class="docnav-list">
                         {% assign navPages = collections[collection[0]] | eleventyNavigation %}
                         {%- for entry in navPages %}
-                            <li {% if entry.url == page.url %} class="active" {% endif %}>
-                                <a href="{{ entry.url }}">{{ entry.title }}</a>
-                            </li>
+                            {% assign entryLocale = entry.url | findLocale %}
+                            {% if entryLocale == pageLocale %}
+                                <li {% if entry.url == page.url %} class="active" {% endif %}>
+                                    <a href="{{ entry.url }}">{{ entry.title }}</a>
+                                </li>
+                            {% endif %}
                         {% endfor %}
                     </ol>
                 </li>
