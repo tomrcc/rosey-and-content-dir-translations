@@ -17,6 +17,7 @@ timezone: Etc/UTC
 collections_config:
   pages:
     path: src/pages
+    url: /[full_slug]/
     disable_add_folder: true
     icon: page_info
     schemas:
@@ -72,7 +73,7 @@ collections_config:
             - key: enable_banner
   docs:
     path: src/docs
-    url: /docs/[slug]
+    url: /docs/[slug]/
     icon: docs
     disable_add_folder: true
     schemas:
