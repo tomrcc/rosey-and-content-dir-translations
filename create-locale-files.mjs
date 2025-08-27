@@ -16,7 +16,7 @@ import path from "path";
 
       for (const key in baseKeys) {
         const keyData = baseKeys[key];
-        const existingKeyValue = existingLocaleData[key].value;
+        const existingKeyValue = existingLocaleData[key]?.value;
         dataToWrite[key] = {
           original: keyData.original,
           value: existingKeyValue || keyData.original,
