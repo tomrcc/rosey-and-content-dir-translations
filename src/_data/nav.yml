@@ -9,6 +9,8 @@ nav_links:
     link_label: 1.0.0
     link_icon_path: /assets/images/github.svg
 languages:
+  - name: English
+    language_code: ""
   - name: French
     language_code: fr
 logo:
