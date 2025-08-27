@@ -1,4 +1,4 @@
 npx rosey generate --source _site
 node create-locale-files.mjs
-npx -y pagefind@latest --source _site
 npx rosey build --source _site --default-language-at-root
+npx -y pagefind@latest --source _site_translated
