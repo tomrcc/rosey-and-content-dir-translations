@@ -1,10 +1,10 @@
 ---
 _schema: page
 permalink: /fr/docs/
-title: Getting Started
+title: Commencer
 layout: layouts/page.html
 eleventyNavigation:
-  key: Getting Started
+  key: Commencer
   order: 1
 tags: page
 SEO_options:
@@ -13,19 +13,20 @@ SEO_options:
   description:
 draft: false
 ---
-To create a new Alto site and deploy it immediately to CloudCannon, click <a target="_blank" rel="noopener" href="https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/alto-eleventy-template">here</a>.
+Pour créer un nouveau site Alto et le déployer immédiatement sur CloudCannon, cliquez <a href="https://app.cloudcannon.com/register#sites/connect/github/CloudCannon/alto-eleventy-template" target="_blank" rel="noopener">ici</a>.
 
-## Creating new site pages
+## Création de nouvelles pages du site
 
-For this guide we'll work through a single example: creating a new documentation on Alto within CloudCannon, and ensuring it's shown in the correct place in your navigation bar.
+Dans ce guide, nous allons prendre un exemple&nbsp;: créer une nouvelle documentation sur Alto dans CloudCannon et vérifier qu'elle s'affiche au bon endroit dans votre barre de navigation.
 
-Navigation in Alto is handled by front matter in Eleventy, which can be easily edited in CloudCannon's <a target="_blank" rel="noopener" href="https://cloudcannon.com/documentation/articles/introducing-the-data-editor/">Data Editor</a>.
+La navigation dans Alto est gérée par les pages d'accueil d'Eleventy, facilement modifiables <a href="https://cloudcannon.com/documentation/articles/introducing-the-data-editor/" target="_blank" rel="noopener">dans l'éditeur</a> de données de CloudCannon.
 
 The site side-navigation only supports one level of nesting, and is configured via the `eleventyNavigation` front matter.
 
-The top-level groups (tags: 'page') are in the order that they are first encountered after sorting all pages by `order`. Lowering a page's weight may move the `eleventyNavigation` for that page up the hierarchy.
+La navigation latérale du site ne prend en charge qu'un seul niveau d'imbrication et est configurée via la page d'accueil `eleventyNavigation`.
 
-Pages can be placed outside of a group (alongside the homepage) by assigning them the `tags` of `page`.
+Les groupes de niveau supérieur (balises&nbsp;: 'page') sont classés par `order` d'apparition après le tri de toutes les pages. Réduire le poids d'une page peut déplacer la `eleventyNavigation` de cette page vers le haut de la hiérarchie.
+
+Les pages peuvent être placées en dehors d'un groupe (à côté de la page d'accueil) en leur attribuant les `tags` de la `page`.
 
 {% figure "/assets/images/uploads/screenshot-2023-12-21-at-12.08.25-pm.png" "" "alt" "" "#link" "target" "rel" "" "attrlink" "className" "300" "200" %}
-
