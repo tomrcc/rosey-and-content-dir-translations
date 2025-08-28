@@ -55,7 +55,6 @@ collections_config:
     url: /docs/[slug]/
     glob: 
       - "**/*.md"
-      # - "!fr/*"
     icon: docs
     disable_add_folder: true
     schemas:
@@ -80,7 +79,7 @@ collections_config:
           text: 
             - key: weight
   fr_docs:
-    path: src/fr_docs
+    path: src/fr-docs
     url: /fr/docs/[slug]/
     glob: 
       - "**/*.md"

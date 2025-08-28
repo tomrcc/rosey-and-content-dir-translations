@@ -10,11 +10,14 @@ Create your own copy of this repository to try out using both Rosey and a conten
 
 To add a new language:
 
-1. Copy the original content files into new directories, using the language code as the name for the directories. Follow how it has been done with the French versions of the `src/docs` and `src/pages` collections in this demo.
+1. Copy the original content files into new directories, using the language code as the name for the directories. Follow how it has been done with the French versions of the `src/pages`, `src/docs`, `src/fr-docs` collections in this demo. 
+
+>!NOTE
+>You can either nest the separate languages belonging to the same collection in the same directory (like `src/pages` and `src/pages/fr`), or keep them in separate directories (like `src/docs` and `src/fr-docs`). Make sure to define the `path` and `url` for the collection in the `cloudcannon.config.yml`, and make sure each page has the correct permalink.
 
 2. Add to the languages array in the `src/_data/nav.yml` file.
 
-3. Add to the `allowedLocales` array in the eleventy.js file.
+3. Add to the `allowedLocales` array in the `eleventy.js` configuration file.
 
 4. Add collections to the `collections_config` and `collection_groups` in your `cloudcannon.config.yml` file, following the format of the French pages included in this demo.
 
