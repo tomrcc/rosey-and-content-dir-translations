@@ -92,6 +92,25 @@ module.exports = function (eleventyConfig) {
     return urlCode;
   });
 
+  eleventyConfig.addFilter("formatLocaleUrl", (url) => {
+    let [localeCode, pageUrl] = url;
+
+    allowedLocales.map((locale) => {
+      const localeWithSlashes = `/${locale}/`;
+      if (pageUrl.startsWith(localeWithSlashes)) {
+        pageUrl = pageUrl.replace(localeWithSlashes, "/");
+      }
+    });
+
+    const joinedUrl = `${localeCode}${pageUrl}`;
+
+    const formattedUrl = joinedUrl.startsWith("/")
+      ? joinedUrl
+      : `/${joinedUrl}`;
+
+    return formattedUrl;
+  });
+
   return {
     dir: {
       input: "src",

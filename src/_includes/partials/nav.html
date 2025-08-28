@@ -46,12 +46,10 @@
                         <img src="/assets/images/lang.svg" alt="Language picker" width="32" height="32">
                 </button>
                 <ul class="lang-picker-list" x-show="langOpen">
-                    {% assign pageUrlWithoutLocale = page.url %}
                     {% for lang in nav.languages %}
-                        {% assign codeToRemove = lang.language_code |  prepend: '/'  %}
-                        {% assign pageUrlWithoutLocale = pageUrlWithoutLocale | remove: codeToRemove %}
+                        {% assign langUrl = lang.language_code | concat: page.url | formatLocaleUrl %}
                         <li>
-                            <a href="/{{ lang.language_code }}{{ pageUrlWithoutLocale }}">{{ lang.name }}</a>
+                            <a href="{{ langUrl }}">{{ lang.name }}</a>
                         </li>
                     {% endfor %}
                 </ul>
