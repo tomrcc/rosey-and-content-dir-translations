@@ -1,4 +1,24 @@
-# Alto Eleventy Template
+# Rosey & Content Directory Hybrid
+
+This project demonstrates how to set up translation by content directory in combination with Rosey. Rosey can be used to translate commonly used phrases on the site, while the more complex body content (which comes from markdown) can be translated by creating different copies of the original page. This type of set up is great for projects which mainly come from markdown body content, such as documentation or blog sites.
+
+
+Edit Rosey translations via the CloudCannon CMS interface, with generation of the editable files happening automatically each build in CloudCannon. Edit your markdown body content for each language like you usually would in CloudCannon, via the WYSIWYG or Visual editor.
+
+
+Create your own copy of this repository to try out using both Rosey and a content directory approach for managing your multilingual content in CloudCannon.
+
+To add a new language:
+
+1. Copy the original content files into new directories, using the language code as the name for the directories. Follow how it has been done with the French versions of the `src/docs` and `src/pages` collections in this demo.
+
+2. Add to the languages array in the `src/_data/nav.yml` file.
+
+3. Add to the `allowedLocales` array in the eleventy.js file.
+
+4. Add collections to the `collections_config` and `collection_groups` in your `cloudcannon.config.yml` file, following the format of the French pages included in this demo.
+
+## Alto Eleventy Template
 
 Alto is a minimal and modern Eleventy template for static documentation sites, created by and optimized for [CloudCannon](https://cloudcannon.com). Browse through a [live demo](https://secret-lapwing.cloudvent.net/).
 
