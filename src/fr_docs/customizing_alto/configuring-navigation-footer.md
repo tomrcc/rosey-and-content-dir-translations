@@ -13,16 +13,16 @@ SEO_options:
   description:
 draft: false
 ---
-You can easily configure Alto's Navigation and Footer items within CloudCannon, under Alto's **Site Settings**.
+Vous pouvez facilement configurer les éléments de navigation et de pied de page d'Alto dans CloudCannon, dans les paramètres du site d'Alto.
 
-## Configuring the navigation
+## Configuration de la navigation
 
-You can edit the navigation title, add links, and a site logo.
+Vous pouvez modifier le titre de la navigation, ajouter des liens et un logo pour le site.
 
-{% figure "/assets/images/uploads/screenshot-2023-07-27-at-1-25-02-pm.png" %}
+{% figure "/assets/images/uploads/screenshot-2023-07-27-at-1-25-02-pm.png" "" "" "" "" "" "" "" "" "" "" "" %}
 
-## ​​​​​Configuring the footer
+## Configuration du pied de page
 
-You can add image- or text-based links to Alto's footer.
+Vous pouvez ajouter des liens (images ou textes) au pied de page d'Alto.
 
-{% figure "/assets/images/uploads/screenshot-2023-07-27-at-1-24-48-pm.png" %}
+{% figure "/assets/images/uploads/screenshot-2023-07-27-at-1-24-48-pm.png" "" "" "" "" "" "" "" "" "" "" "" %}
